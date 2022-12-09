@@ -1,10 +1,6 @@
-import type { ComponentInternalInstance, VNode } from 'vue'
+import type { VNode } from 'vue'
 import { defineComponent, getCurrentInstance, onMounted, ref, watchPostEffect } from 'vue'
 import { observe } from '../utils/index'
-
-interface CurComponentInternalInstance extends ComponentInternalInstance {
-  ctx: any
-}
 
 export interface SizeInfoType {
   width: number
