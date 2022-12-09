@@ -12,5 +12,13 @@ export default defineConfig({
       name: 'vue-resize-observer',
       fileName: 'vue-resize-observer',
     },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
+    },
   },
 })

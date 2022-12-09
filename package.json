@@ -15,9 +15,7 @@
   "module": "./dist/vue-resize-observer.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",

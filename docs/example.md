@@ -1,7 +1,7 @@
 # 基本使用
 
 <script setup>
-import Example from '../src/example/App.vue'
+import Example from '../example/App.vue'
 </script>
 
 

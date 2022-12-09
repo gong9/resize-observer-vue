@@ -1,13 +1,17 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
-import type { SizeInfoType } from '../core/SingleObserver'
-import ResizeObserver from '../core/ResizeObserver'
+import { ResizeObserver } from '../dist/vue-resize-observer.mjs'
 import WrapVue from './wrap.vue'
+
+interface SizeInfoType {
+  width: number
+  height: number
+  offsetWidth: number
+  offsetHeight: number
+}
+
 const sizeRef = ref<SizeInfoType | null>()
-
 const onResize = (size: SizeInfoType) => {
-  console.log(sizeRef.value)
-
   sizeRef.value = size
 }
 </script>
