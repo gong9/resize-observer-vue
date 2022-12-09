@@ -5,10 +5,13 @@ import { } from 'vue'
 <template>
   <div>
     <div>
-      <textarea id="" name="" cols="30" rows="10" />
+      <textarea id="" class="textarea" name="" cols="30" rows="10" />
     </div>
   </div>
 </template>
 
-<style scoped lang='scss'>
+<style scoped lang='css'>
+.textarea{
+  border: 1px solid red;
+}
 </style>
