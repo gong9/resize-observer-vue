@@ -1,11 +1,20 @@
 <script setup lang='ts'>
-import { } from 'vue'
+import { ref } from 'vue'
+import type { SizeInfoType } from '../core/SingleObserver'
+import WrapVue from './wrap.vue'
+const sizeRef = ref<SizeInfoType | null>(null)
+
+const onResize = (size: SizeInfoType) => {
+  sizeRef.value = size
+}
 </script>
 
 <template>
   <div>
-    <ResizeObserver>
-      <div>123</div>
+    {{ sizeRef?.width }}
+    {{ sizeRef?.height }}
+    <ResizeObserver :on-resize="onResize">
+      <WrapVue />
     </ResizeObserver>
   </div>
 </template>

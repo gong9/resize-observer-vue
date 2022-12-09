@@ -19,7 +19,7 @@ export default defineComponent({
       <div>
        { defaults.map((node: VNode) => {
          return (
-          <ResizeObserver>
+          <ResizeObserver {...props}>
             {node}
           </ResizeObserver>
          )
