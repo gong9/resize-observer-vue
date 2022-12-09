@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
-import ResizeObserver from '../src/core/ResizeObserver'
+import { ResizeObserver } from '../dist/vue-resize-observer.mjs'
 import WrapVue from './wrap.vue'
 
 interface SizeInfoType {
