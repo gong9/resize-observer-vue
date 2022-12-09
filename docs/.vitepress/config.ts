@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'resize-observer-vue',
-  base: '.',
+  base: process.env.NODE_ENV === 'production' ? '/resize-observer-vue/' : '/',
   themeConfig: {
     nav: [
       {
