@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import ResizeObserver from './core/resizeObserver.vue'
+import ResizeObserver from './core/ResizeObserver'
 
 export default {
   install(app: App) {

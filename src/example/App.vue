@@ -4,7 +4,9 @@ import { } from 'vue'
 
 <template>
   <div>
-    <ResizeObserver />
+    <ResizeObserver>
+      <div>123</div>
+    </ResizeObserver>
   </div>
 </template>
 

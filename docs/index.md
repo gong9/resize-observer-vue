@@ -1,1 +1,1 @@
-# vue-resize-observer
+# resize-observer-vue
