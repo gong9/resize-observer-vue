@@ -24,7 +24,6 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const defaults = (context.slots as any)?.default() || []
     const elementRef = ref< HTMLElement | null>(null)
     const sizeRef = ref<SizeInfoType>({
       width: -1,
@@ -73,6 +72,6 @@ export default defineComponent({
       return arrVNode[0]
     }
 
-    return () => handleElementVnode(defaults)
+    return () => handleElementVnode((context.slots as any)?.default() || [])
   },
 })

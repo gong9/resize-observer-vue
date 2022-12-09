@@ -13,11 +13,9 @@ export default defineComponent({
     },
   },
   setup(props, context) {
-    const defaults = (context.slots as any)?.default() || []
-
     return () => (
       <div>
-       { defaults.map((node: VNode) => {
+       { ((context.slots as any)?.default() || []).map((node: VNode) => {
          return (
           <ResizeObserver {...props}>
             {node}
