@@ -6,6 +6,8 @@ import WrapVue from './wrap.vue'
 const sizeRef = ref<SizeInfoType | null>()
 
 const onResize = (size: SizeInfoType) => {
+  console.log(sizeRef.value)
+
   sizeRef.value = size
 }
 </script>
