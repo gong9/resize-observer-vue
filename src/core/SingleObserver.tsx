@@ -34,7 +34,7 @@ export default defineComponent({
 
     onMounted(() => {
       const instance = getCurrentInstance()
-      elementRef.value = (instance as unknown as CurComponentInternalInstance).ctx.$el
+      elementRef.value = instance!.vnode.el as HTMLElement
     })
 
     const onInternalResize = (target: Element) => {
