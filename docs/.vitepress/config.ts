@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'VitePress',
+  title: 'resize-observer-vue',
+  base: '.',
   themeConfig: {
     nav: [
       {
