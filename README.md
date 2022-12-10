@@ -1,10 +1,14 @@
 # resize-observer-vue
 
-## 是什么？
+> 🏄‍♀️ [docs](https://gong9.github.io/resize-observer-vue/)   
+Or if you want use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
+
+
+## 是什么？🙊
 
 监听组件的大小、位置是否发生了改变
 
-## 怎么用
+## 怎么用? 🙈
 
 `pnpm add resize-observer-vue`
 
