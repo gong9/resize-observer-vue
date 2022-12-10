@@ -14,15 +14,13 @@ export default defineComponent({
   },
   setup(props, context) {
     return () => (
-      <div>
-       { ((context.slots as any)?.default() || []).map((node: VNode) => {
-         return (
+      (context.slots as any)?.default() || []).map((node: VNode) => {
+      return (
           <ResizeObserver {...props}>
             {node}
           </ResizeObserver>
-         )
-       })}
-      </div>
+      )
+    },
     )
   },
 })

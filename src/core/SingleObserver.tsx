@@ -1,6 +1,6 @@
 import type { VNode } from 'vue'
 import { defineComponent, getCurrentInstance, onMounted, ref, watchPostEffect } from 'vue'
-import { observe } from '../utils/index'
+import { observe, unobserve } from '../utils/index'
 
 export interface SizeInfoType {
   width: number
@@ -13,6 +13,8 @@ export default defineComponent({
   props: {
     disabled: {
       type: Boolean,
+      default: false,
+
     },
     onResize: {
       type: Function,
@@ -57,11 +59,17 @@ export default defineComponent({
       }
     }
 
-    watchPostEffect(() => {
+    watchPostEffect((cleanEffect) => {
       const curElement = elementRef.value
 
-      if (curElement)
+      if (curElement && !props.disabled)
         observe(curElement, onInternalResize)
+
+      if (curElement) {
+        cleanEffect(() => {
+          unobserve(curElement, onInternalResize)
+        })
+      }
     })
 
     const handleElementVnode = (arrVNode: VNode[]) => {

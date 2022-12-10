@@ -7,6 +7,7 @@ import Example from '../example/App.vue'
 
 
 ## 监听组件
+> vitepress中textarea只能上下拉动...
 
 <Example />
 

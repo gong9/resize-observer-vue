@@ -11,8 +11,14 @@ interface SizeInfoType {
 }
 
 const sizeRef = ref<SizeInfoType | null>()
+const disabledRef = ref(false)
+
 const onResize = (size: SizeInfoType) => {
   sizeRef.value = size
+}
+
+const switchDisabled = () => {
+  disabledRef.value = !disabledRef.value
 }
 </script>
 
@@ -21,11 +27,29 @@ const onResize = (size: SizeInfoType) => {
     {{ sizeRef?.width }}
     {{ sizeRef?.height }}
 
-    <ResizeObserver :on-resize="onResize">
+    <ResizeObserver :on-resize="onResize" :disabled="disabledRef">
       <WrapVue />
     </ResizeObserver>
+
+    <div>
+      disabled=> {{ disabledRef }}
+      <button class="button" @click="switchDisabled">
+        切换disabled
+      </button>
+    </div>
   </div>
 </template>
 
-<style scoped lang='scss'>
+<style scoped lang='css'>
+.button {
+    background-color: #4c7faf; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
 </style>
