@@ -10,7 +10,7 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.8",
+  "version": "1.0.9",
   "module": "./dist/vue-resize-observer.mjs",
   "types": "./dist/index.d.ts",
   "license": "MIT",
