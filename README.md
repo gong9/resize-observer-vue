@@ -11,7 +11,7 @@ Or if you want use react  🤸‍♂️ [for react](https://github.com/react-com
 
 Whether the size and location of the listening component have changed
 
-## How to use it?? 🙈
+## How to use it? 🙈
 
 `pnpm add resize-observer-vue`
 
