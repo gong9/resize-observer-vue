@@ -7,8 +7,6 @@ import Example from '../example/App.vue'
 
 
 ## 监听组件
-> vitepress中textarea只能上下拉动...
-
 <Example />
 
 main
@@ -69,15 +67,8 @@ import { } from 'vue'
 <template>
   <div>
     <div>
-      <textarea id="" class="textarea" name="" cols="30" rows="10" />
+      <div class="core" />
     </div>
   </div>
 </template>
-
-<style scoped lang='css'>
-.textarea{
-  border: 1px solid red;
-}
-</style>
-
 ```

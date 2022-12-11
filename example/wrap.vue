@@ -5,14 +5,17 @@ import { } from 'vue'
 <template>
   <div>
     <div>
-      <textarea class="textarea" />
+      <div class="core" />
     </div>
   </div>
 </template>
 
 <style scoped lang='css'>
-.textarea{
-  min-width: 100px;
-  border: 1px solid red;
+.core{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  resize: both;
+  overflow: hidden;
 }
 </style>

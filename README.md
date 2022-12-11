@@ -6,6 +6,7 @@
 > 🏄‍♀️ [docs](https://gong9.github.io/resize-observer-vue/)   
 Or if you want to use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
 
+![效果](./public/Dec-11-2022%2021-57-41.gif)
 
 ## what？🙊
 
