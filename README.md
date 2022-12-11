@@ -4,7 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/resize-observer-vue.svg?style=flat)](https://npmjs.org/package/resize-observer-vue)
 
 > 🏄‍♀️ [docs](https://gong9.github.io/resize-observer-vue/)   
-Or if you want use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
+Or if you want to use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
 
 
 ## what？🙊
