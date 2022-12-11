@@ -1,19 +1,22 @@
 # resize-observer-vue
 
+[![NPM version](https://img.shields.io/npm/v/marketing-components-pro.svg?style=flat)](https://npmjs.org/package/marketing-components-pro)
+[![NPM downloads](http://img.shields.io/npm/dm/marketing-components-pro.svg?style=flat)](https://npmjs.org/package/marketing-components-pro)
+
 > 🏄‍♀️ [docs](https://gong9.github.io/resize-observer-vue/)   
 Or if you want use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
 
 
-## 是什么？🙊
+## what？🙊
 
-监听组件的大小、位置是否发生了改变
+Whether the size and location of the listening component have changed
 
-## 怎么用? 🙈
+## How to use it?? 🙈
 
 `pnpm add resize-observer-vue`
 
 
-引入
+import
 ```ts
 import { createApp } from 'vue'
 import ResizeObserver from 'resize-observer-vue'
@@ -24,7 +27,7 @@ const app = createApp(App)
 app.use(ResizeObserver).mount('#app')
 ```
 
-使用
+use
 ```vue
 <ResizeObserver>
     <TargetComponent/>
