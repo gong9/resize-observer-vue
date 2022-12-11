@@ -1,7 +1,7 @@
 # resize-observer-vue
 
-[![NPM version](https://img.shields.io/npm/v/marketing-components-pro.svg?style=flat)](https://npmjs.org/package/marketing-components-pro)
-[![NPM downloads](http://img.shields.io/npm/dm/marketing-components-pro.svg?style=flat)](https://npmjs.org/package/marketing-components-pro)
+[![NPM version](https://img.shields.io/npm/v/resize-observer-vue.svg?style=flat)](https://npmjs.org/package/resize-observer-vue)
+[![NPM downloads](http://img.shields.io/npm/dm/resize-observer-vue.svg?style=flat)](https://npmjs.org/package/resize-observer-vue)
 
 > 🏄‍♀️ [docs](https://gong9.github.io/resize-observer-vue/)   
 Or if you want use react  🤸‍♂️ [for react](https://github.com/react-component/resize-observer)
