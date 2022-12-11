@@ -34,3 +34,11 @@ use
     <TargetComponent/>
 <ResizeObserver/>
 ```
+
+## API
+
+
+| Property | Type                        | Default | Description                     |
+| -------- | --------------------------- | ------- | ------------------------------- |
+| disabled | boolean                     | false   | Whether to disable observation                            |
+| onResize | ({ width, height }) => void | -       | Trigger when child node resized |

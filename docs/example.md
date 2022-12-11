@@ -72,3 +72,11 @@ import { } from 'vue'
   </div>
 </template>
 ```
+
+
+## API
+
+| Property | Type                        | Default | Description                     |
+| -------- | --------------------------- | ------- | ------------------------------- |
+| disabled | boolean                     | false   | 是否禁用观察器                            |
+| onResize | ({ width, height }) => void | -       | 组件发生resize之后的回调 |
