@@ -25,9 +25,10 @@ const switchDisabled = () => {
 
 <template>
   <div>
-    {{ sizeRef?.width }}
-    {{ sizeRef?.height }}
-
+    <div>
+      {{ sizeRef?.width }}
+      {{ sizeRef?.height }}
+    </div>
     <WrapVue v-resize:[disabledRef]="onResize" />
 
     <div>

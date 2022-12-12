@@ -24,8 +24,10 @@ const switchDisabled = () => {
 
 <template>
   <div>
-    {{ sizeRef?.width }}
-    {{ sizeRef?.height }}
+    <div>
+      {{ sizeRef?.width }}
+      {{ sizeRef?.height }}
+    </div>
 
     <ResizeObserver :on-resize="onResize" :disabled="disabledRef">
       <WrapVue />
