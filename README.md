@@ -62,7 +62,21 @@ use
 <TargetComponent v-resize:[disabled]="callback" />
 ```
 
+### 3. No longer provide the way of hooks
 
+Originally, the use of hooks can also be as simple as the following
+
+```ts
+const targetRef = ref()
+useResize(targetRef, () => {
+  // ...
+})
+```
+
+```vue
+<TargetComponent ref="targetRef" />
+```
+But unfortunately, in the setup syntax of vue3, it is no longer possible to simply obtain instances of subcomponents through ref. Must be exported manually. but i see no value in doing this
 ## API
 
 
